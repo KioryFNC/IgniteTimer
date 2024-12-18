@@ -29,7 +29,6 @@ export function Home() {
     console.log(data)
   }
 
-
   const task = watch('task')
   const isSubmitDisabled = !task
 
