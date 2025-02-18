@@ -20,6 +20,14 @@ interface CyclesContextType {
 
 export const CyclesContext = createContext({} as CyclesContextType)
 
+export function test() {
+  return (
+    
+   <h1>a</h1> 
+    
+  )
+}
+
 interface CyclesContextProviderProps {
   children: ReactNode
 }
@@ -71,8 +79,9 @@ const { cycles, activeCycleId } = cyclesState
       }
     })
     setAmountSecondsPassed(0)
-
   }
+
+  
 
   function interruptCurrentCycle() {
     dispatch({
