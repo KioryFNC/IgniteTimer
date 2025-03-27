@@ -9,4 +9,15 @@ export const LayoutContainer = styled.div`
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 1200px) {
+    max-width: 95%;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    padding: 1.5rem;
+  }
 `;

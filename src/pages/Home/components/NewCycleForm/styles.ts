@@ -10,6 +10,10 @@ export const FormContainer = styled.div`
   font-size: 1.125rem;
   font-weight: bold;
   flex-wrap: wrap;
+  @media (max-width: 768px) {
+    padding: 1rem 2rem;
+    font-size: 0.875rem;
+  }
 `;
 
 const BaseInput = styled.input`
@@ -30,10 +34,15 @@ const BaseInput = styled.input`
   &::placeholder {
     color: ${(props) => props.theme['gray-500']};
   }
+
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+  }
 `;
 
 export const TaskInput = styled(BaseInput)`
   flex: 1;
+  text-overflow: ellipsis;
   &::-webkit-calendar-picker-indicator{
     display: none !important;
   }

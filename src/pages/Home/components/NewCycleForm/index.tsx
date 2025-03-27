@@ -16,7 +16,7 @@ export function NewCycleForm() {
     <TaskInput 
       id="task" 
       list="taskSuggestions"
-      placeholder="Dê um nome para seu projeto"
+      placeholder="nomeie para seu projeto"
       disabled={!!activeCycle}
       {...register('task')}
     />
